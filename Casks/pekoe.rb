@@ -4,30 +4,30 @@ cask "pekoe" do
   rename "pekoe_*/share", "share"
   rename "pekoe_*/contrib", "contrib"
 
-  version "0.11.1"
+  version "0.12.0"
 
   on_macos do
     on_arm do
-      sha256 "5e09857de41f14ba0828790d6e3a139f50574a1b54f23a25306b86d6cdb1f478"
+      sha256 "7b8d1923e7c0cdd3dcd29c9da95e18bed76b7d56670a203771fd4b19bdffea04"
       url "https://github.com/sakamosu/pekoe/releases/download/v#{version}/pekoe_#{version}_darwin_arm64.tar.gz"
-      rename "pekoe_0.11.1_darwin_arm64/bin/pekoe", "bin/pekoe"
+      rename "pekoe_0.12.0_darwin_arm64/bin/pekoe", "bin/pekoe"
     end
     on_intel do
-      sha256 "5b786cc8ec26a9b0b335d698006f561d22c0315528c9b6aacec9b21f2c163579"
+      sha256 "e113003da2cbe12e38f5658bd6b2a76da23d1a3ec10701f7ac8debb65ff6b03c"
       url "https://github.com/sakamosu/pekoe/releases/download/v#{version}/pekoe_#{version}_darwin_amd64.tar.gz"
-      rename "pekoe_0.11.1_darwin_amd64/bin/pekoe", "bin/pekoe"
+      rename "pekoe_0.12.0_darwin_amd64/bin/pekoe", "bin/pekoe"
     end
   end
   on_linux do
     on_arm do
-      sha256 "fb11ded5142dace1f9efba628dae4830ccc541ff0ec15100e261dd4e6a230255"
+      sha256 "a4cb871f94f777f0cb11e26d1d0ff88802ede3127ebaf186a38ad2181daefabb"
       url "https://github.com/sakamosu/pekoe/releases/download/v#{version}/pekoe_#{version}_linux_arm64.tar.gz"
-      rename "pekoe_0.11.1_linux_arm64/bin/pekoe", "bin/pekoe"
+      rename "pekoe_0.12.0_linux_arm64/bin/pekoe", "bin/pekoe"
     end
     on_intel do
-      sha256 "3868fb74a153d28c1b61334ef056efd0234133a5e430edbb5a0e37ba3741aa18"
+      sha256 "1f08f1bb39cfa58ffa717623f87a423b2cf30c23e1561181c34450828bd2fb26"
       url "https://github.com/sakamosu/pekoe/releases/download/v#{version}/pekoe_#{version}_linux_amd64.tar.gz"
-      rename "pekoe_0.11.1_linux_amd64/bin/pekoe", "bin/pekoe"
+      rename "pekoe_0.12.0_linux_amd64/bin/pekoe", "bin/pekoe"
     end
   end
 
